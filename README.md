@@ -102,29 +102,25 @@ This project offers a suite of AWS Lambda functions to automate backend operatio
 - **`Negotiating-Agent`**  
   Handles negotiations with carriers and suppliers for optimal pricing and terms.
 
----
+Prerequisites
+AWS Environment
+Active AWS account with IAM roles configured for Lambda functions.
+Software
+Python (>= 3.7)
+AWS CLI installed and configured.
+Permissions
+Required permissions to access S3, DynamoDB, SQS, SES, and Lambda.
+Setup and Deployment
+Clone the Repository
 
-## Folder Structure
+git clone <repository_url>
+cd DevSFTroopers
+Setup AWS Environment Ensure the AWS CLI is configured with the necessary permissions:
 
-```plaintext
-├── CarrierPricing/
-├── CustomerPricingLogic/
-├── ExtractOrderDetails/
-├── GenerateArtifact/
-├── HazardClassification/
-├── NegotiationWithCarrier/
-├── NeptuneIntegrationFunction-74fc2a7e-bbb5-4309-90a1-6560f88041c9/
-├── aws-exportedge-dev-order-detail-api-lambda/
-├── aws-exportedge-dev-order-insert-dynamodb-table-lambda/
-├── aws-exportedge-dev-order-list-api-lambda/
-├── aws-exportedge-dev-push-ordersjson-to-sqsqueue-lambda/
-├── aws-exportedge-dev-read-docs-from-s3-api-lambda/
-├── aws-exportedge-dev-read-dynamodb-stream-lambda/
-├── aws-exportedge-dev-read-order-json-from-s3-lambda/
-├── aws-exportedge-dev-ses-notification-lambda/
-├── aws-exportedge-dev-store-order-docs-in-s3bucket-lambda/
-├── aws-exportedge-dev-store-ordermetadata-json-in-s3bucket-lambda/
-├── Compliance-Chat-Agent/
-├── Tracking-Agent/
-├── Negotiating-Agent/
-└── .DS_Store
+aws configure
+Deploy Lambda Functions Use AWS CLI, AWS SAM, or the Serverless Framework to deploy:
+
+sam deploy --guided
+Test Lambda Functions Invoke functions using the AWS CLI or AWS Lambda Console:
+
+aws lambda invoke --function-name <function_name> output.json
