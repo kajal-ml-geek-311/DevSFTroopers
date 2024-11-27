@@ -1,7 +1,7 @@
 # DevSFTroopers
 
 ## Overview
-DevSFTroopers is a repository designed to streamline backend operations by utilizing AWS Lambda functions for various business processes. It supports workflows like order management, carrier negotiation, pricing logic, and integration with AWS services such as S3, DynamoDB, SES, and SQS.
+DevSFTroopers is a repository designed to streamline backend operations by utilizing AWS Lambda functions for various business processes. It supports workflows like order management, carrier negotiation, pricing logic, and integration with AWS services such as S3, DynamoDB, API Gateway,NEPTUNE, and SQS.
 
 For the **frontend**, visit the repository: [AWS-FINAL](https://github.com/Kamlesh7417/AWS-FINAL)
 
