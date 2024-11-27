@@ -3,6 +3,8 @@
 ## Overview
 DevSFTroopers is a repository designed to streamline backend operations by utilizing AWS Lambda functions for various business processes. It supports workflows like order management, carrier negotiation, pricing logic, and integration with AWS services such as S3, DynamoDB, SES, and SQS.
 
+For the **frontend**, visit the repository: [AWS-FINAL](https://github.com/Kamlesh7417/AWS-FINAL)
+
 ---
 
 ## Table of Contents
@@ -92,6 +94,14 @@ This project offers a suite of AWS Lambda functions to automate backend operatio
 - **`NeptuneIntegrationFunction-74fc2a7e-bbb5-4309-90a1-6560f88041c9`**  
   Integrates with Amazon Neptune to manage and query graph-based data for advanced analytics.
 
+### 9. Chatbots
+- **`Compliance-Chat-Agent`**  
+  Manages compliance-related queries and ensures regulatory guidelines are adhered to.
+- **`Tracking-Agent`**  
+  Provides real-time order tracking details and shipment statuses to users.
+- **`Negotiating-Agent`**  
+  Handles negotiations with carriers and suppliers for optimal pricing and terms.
+
 ---
 
 ## Folder Structure
@@ -114,4 +124,7 @@ This project offers a suite of AWS Lambda functions to automate backend operatio
 ├── aws-exportedge-dev-ses-notification-lambda/
 ├── aws-exportedge-dev-store-order-docs-in-s3bucket-lambda/
 ├── aws-exportedge-dev-store-ordermetadata-json-in-s3bucket-lambda/
+├── Compliance-Chat-Agent/
+├── Tracking-Agent/
+├── Negotiating-Agent/
 └── .DS_Store
