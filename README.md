@@ -102,8 +102,8 @@ This project offers a suite of AWS Lambda functions to automate backend operatio
 - **`Negotiating-Agent`**  
   Handles negotiations with carriers and suppliers for optimal pricing and terms.
 
-Prerequisites
-AWS Environment
+## Prerequisites
+### AWS Environment
 Active AWS account with IAM roles configured for Lambda functions.
 Software
 Python (>= 3.7)
